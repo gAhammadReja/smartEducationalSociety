@@ -1,38 +1,48 @@
-.App {
+/* Styling for the "Enroll Now" button with animation */
+.enroll-button-container {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.enroll-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #007BFF, #0056b3);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #0056b3;
+  border-radius: 30px;
+ 
+  animation: pulse 3s infinite;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.enroll-button:hover {
+  background: linear-gradient(to bottom, #0056b3, #007BFF);
+  border: 2px solid #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  animation: none; /* Disable animation on hover */
+}
+
+@keyframes pulse {
+  0% {
+  background: linear-gradient(to bottom, #0056b3, #007BFF);
+
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, #5100b3bd, #ff0000aa);
+
+  }
+  100% {
+    transform: scale(1);
+  background: linear-gradient(to bottom, #0056b3, #007BFF);
+
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+padding-top: 6rem;
 }

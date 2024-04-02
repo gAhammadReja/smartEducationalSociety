@@ -1,0 +1,126 @@
+
+.main h1{
+    font-weight: 700;
+    text-shadow: -1px 2px 2px rgb(215, 0, 115);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.53rem;
+}
+.main{
+    background: url('/public/milky-way-starry-sky-night-mountains-lake-reflection-cold-5k-5760x3840-287.jpg');
+    /* background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZWR1Y2F0aW9ufHx8fHx8MTcwMjc5MjU1Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600'); */
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    height: fit-content;
+    margin: 10px;
+    max-width: 96%;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 90px rgba(30, 0, 255, 0.839), inset 10px -10px 40px rgba(4, 36, 39, 0.73);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+z-index: 9;
+overflow: hidden;
+background-color: rgba(209, 224, 255, 0.537);
+color: aliceblue;
+font-size: 1.3rem;
+line-height: 1.6rem;
+animation: bip ease-in-out 6s infinite;
+}
+@keyframes bip{
+    0%{
+scale: 1;
+    }50%{
+scale: 1.03;
+    }
+}
+.main::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius:100px;
+    rotate: 240deg;
+    top: 10%;
+    left: 15%;
+    animation:box ease-in-out 8s infinite;
+}
+.main::before{
+    content: "";
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 150px;
+    rotate: 0deg;
+    top: -10%;
+    left: 55%;
+    animation:box ease-in-out 6s infinite;
+}
+@keyframes box{
+100%{
+    top:160%;
+    rotate: 120deg;
+    background-color: rgba(234, 0, 255, 0.105);
+}99%{
+    background-color: rgba(71, 7, 174, 0.719);
+}
+40%{
+    top:0%;
+    left: 40%;
+}
+}
+
+.carousel-item img{
+    height: 69vh;
+    }    
+@media screen and (max-width:480px) {
+
+.carousel-item img{
+height: 350px;
+
+}    
+}
+.coaching , .nursury{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding:0 2vw;
+
+}
+.coaching .left img, .nursury .left img{
+ width: 400px;
+ height: 400px;
+ max-height: 80vw;
+ max-width: 80vw;
+ box-shadow: 5px 5px 5px;
+ border-radius: 5px;
+ margin: 5px;
+ transition: all ease-in-out 2s;
+}
+.coaching .right , .nursury .right{
+    padding:20px 10px;
+}
+
+.nursury{
+ flex-direction: row-reverse;
+}
+.nursury .left img{
+    box-shadow: -5px -5px 10px;
+}
+@media screen and (max-width:970px) {
+    .coaching{
+        flex-wrap: wrap;
+    }
+    .nursury{
+        flex-wrap: wrap;
+    }
+    html{
+        font-size: 11px;
+    }
+}

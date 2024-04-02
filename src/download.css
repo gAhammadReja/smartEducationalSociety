@@ -1,0 +1,28 @@
+
+
+/* Style for the DownloadSection container */
+.download-section-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Style for the list of download items */
+  .download-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style for each download item */
+  .download-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the download link */
+  .download-link {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
