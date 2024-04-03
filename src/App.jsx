@@ -18,7 +18,7 @@ import StudentList from './components/StudentList';
 import { PageNotFound } from './components/error';
 import TDashboard from './teacher/teacherDashboard.';
 import TeacherList from './admin/teacherList';
-
+import MyTube from './mytube/youTubeClone';
 
 const App = () => {
   return (
@@ -41,6 +41,7 @@ const App = () => {
           <Route path="/adminDashboard/StudentList" element={<StudentList/>} />
           <Route path="/teacherPanel" element={<TDashboard/>} />
           <Route path="*" element={<PageNotFound/>} />
+          <Route path='/myTube' element={<MyTube/>}/>
         </Routes>    
     </Router>
     </>

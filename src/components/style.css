@@ -1,12 +1,23 @@
+.container{
+    min-width: 95vw;
+}
+
 .my-nav-button{
-    box-shadow: 2px 2px 3px rgba(31, 3, 88, 0.437), inset 2px -2px 8px rgb(214, 239, 255);
-    margin: 5px;
-    font-size: 1.2em;
+    margin: 0px;
+    font-size: 1.1rem;
     font-weight: 700;
-    padding: 0 15px;
+    padding: 0 0.7rem; 
+    text-transform: uppercase;
     transition: transform ease-in-out 0.4s;
-    border-radius: 4px 0 4px 0;
-    background-color: rgba(255, 255, 255, 0.863);
+   margin:1vh 0.2rem;
+   border: 1px solid rgb(255, 255, 255);
+   border-radius: 0.5rem;
+   background-color: rgba(123, 154, 255, 0.214);
+}
+.my-nav-button:hover{
+    box-shadow: 2px 2px 3px rgba(88, 3, 3, 0.865);
+    
+    background-color: rgb(254, 255, 255);
 
 }
 .my-nav-button:hover{
@@ -14,7 +25,43 @@
     transition: transform ease-in-out 0.4s;
 }
 .bg-myBg{
-    background: linear-gradient(rgba(4, 0, 80, 0.851),rgba(0, 145, 255, 0.881));
+    background: linear-gradient(rgba(11, 2, 173, 0.861),rgba(0, 145, 255, 0.871));
     box-shadow: 2px 2px 5px;
     
 }
+.navTogglerButton{
+display: flex;
+border: 0.2rem solid rgba(94, 151, 142, 0.547);
+border-radius: 50%;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.237);
+padding: 0.4rem;
+}
+.navTogglerButton span{
+border: 2px solid white;
+border-radius: 5px;
+width: 2.3rem;
+margin: 0.23rem;
+}
+
+.navTogglerButton:active{
+    border: 0.2rem solid red;
+}
+
+@media screen and (min-width:992px) {
+    .navTogglerButton{
+    display: none;
+    }
+    }
+    @media screen and (max-width:992px) {
+ 
+        }
+            
+
+    @media screen and (max-width:1430px) {
+        html,body{
+font-size: 12px;
+        }
+        }
+            
+

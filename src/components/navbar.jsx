@@ -6,14 +6,11 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-myBg py-3 fixed-top">
       <div className="container d-flex" style={{'flexWrap':'wrap'}}>
         <NavLink to="/" className="navbar-brand">
-         <h1 style={{'color':'whitesmoke','textShadow':'1px 0px 2px blueviolet'}} className='px-3'>Smart Educationl Society</h1>
+         <h1 style={{'color':'whitesmoke','textShadow':'1px 0px 2px blueviolet'}} className='px-2'>Smart Educationl Society</h1>
         </NavLink>
         
         <button
-          className="navbar-toggler" style={{
-            backgroundColor:"rgba(231, 223, 255, 0.7)",
-            border:"2px solid black"
-          }}
+          className="navbar-togglerb navTogglerButton"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -21,7 +18,10 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          {/* <span className="navbar-toggler-icon"></span> */}
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">

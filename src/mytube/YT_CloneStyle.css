@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#downloadSection{
+    position: absolute;
+    top: 0;
+    color: aliceblue;
+    width: 100%;
+    min-height: 120%;
+}
+#TopBar{
+justify-content: space-between;
+align-items: center;
+}
+#mainBody{ 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#body{
+    justify-content: space-between;
+}
+.center{
+    text-align: center;
+}
+ 
+.search{ 
+ 
+    border: 1px solid white;
+    color: azure;
+    border-radius: 6rem;
+font-size: 0.9em;
+background-color: rgba(41, 40, 40, 0.814);
+
+}
+.round{
+    border-radius: 50%;
+}

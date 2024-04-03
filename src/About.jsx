@@ -34,7 +34,7 @@ let frameStyle = {
       <div className="container p-4" style={{minHeight:"50vh"}}>
         {/* Your main content goes here */}
         <div style={divStyle}>
-  <iframe loading="lazy" style={frameStyle}
+  <iframe loading="lazy" title='n' style={frameStyle}
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFxhxra2p0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
 </div>
@@ -52,7 +52,7 @@ let frameStyle = {
       borderRadius: '8px',
       willChange: 'transform'
     }}>
-      <iframe
+      <iframe title='h'
         loading="lazy"
         style={{
           position: 'absolute',
